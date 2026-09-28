@@ -1,4 +1,4 @@
-# Employee Salaries
+# Japan Population
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -19,7 +19,7 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T07:01:57.189Z  
+**Submitted:** 2026-09-28T07:10:10.185Z  
 
 ```db2
 
@@ -29,11 +29,9 @@ The **CITY** table is described as follows:
     2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
     3. Type your code immediately after comment. Don't leave any blank line.
 */
-SELECT name 
-FROM EMPLOYEE
-WHERE salary >2000
- AND months<10
-ORDER BY employee_id ASC;
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE COUNTRYCODE = 'JPN';
 
 ```
 
