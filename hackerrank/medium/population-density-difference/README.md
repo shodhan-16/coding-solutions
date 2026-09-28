@@ -1,4 +1,4 @@
-# Japan Population
+# Population Density Difference
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -23,7 +23,7 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T07:10:14.990Z  
+**Submitted:** 2026-09-28T08:41:38.221Z  
 
 ```db2
 
@@ -33,9 +33,8 @@ The **CITY** table is described as follows:
     2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
     3. Type your code immediately after comment. Don't leave any blank line.
 */
-SELECT SUM(POPULATION)
-FROM CITY
-WHERE COUNTRYCODE = 'JPN';
+SELECT MAX(POPULATION)-MIN(POPULATION)
+FROM CITY;
 
 ```
 
