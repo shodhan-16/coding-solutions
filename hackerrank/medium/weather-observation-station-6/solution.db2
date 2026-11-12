@@ -1,7 +1,9 @@
-(select city ,length(city) from station
-order by length(city) ASC, city ASC
-limit 1)
-UNION ALL
-(select city ,length(city)from station
-order by length(city)Desc,city ASC
-limit 1);
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE 'A%' OR
+      CITY LIKE 'E%' OR
+      CITY LIKE 'I%' OR
+      CITY LIKE 'O%' OR
+      CITY LIKE 'U%';
+
+
