@@ -25,7 +25,7 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-12T15:27:56.870Z  
+**Submitted:** 2026-11-12T15:28:29.790Z  
 
 ```db2
 select * from city 
