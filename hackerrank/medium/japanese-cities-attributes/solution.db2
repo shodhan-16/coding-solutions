@@ -1,2 +1,3 @@
-select * from CITY
-where COUNTRYCODE = 'JPN';
+select Name from city 
+where CountryCode = 'USA'
+AND population > 120000;
