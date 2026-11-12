@@ -1,4 +1,4 @@
-# Japanese Cities' Names
+# Weather Observation Station 4
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -28,11 +28,11 @@ For example, if there are three records in the table with **CITY** values 'New Y
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-12T15:45:13.895Z  
+**Submitted:** 2026-11-12T15:49:18.456Z  
 
 ```db2
-select NAME from CITY
-where COUNTRYCODE = 'JPN';
+select count(city)-count(distinct city)
+from station;
 
 ```
 
