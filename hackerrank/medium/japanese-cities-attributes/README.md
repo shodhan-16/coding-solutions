@@ -1,4 +1,4 @@
-# Japanese Cities' Attributes
+# Revising the Select Query II
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -24,11 +24,12 @@ The **CITY** table is described as follows:
 **Language:** db2  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-12T15:41:31.599Z  
+**Submitted:** 2026-11-12T15:34:39.281Z  
 
 ```db2
-select * from CITY
-where COUNTRYCODE = 'JPN';
+select Name from city 
+where CountryCode = 'USA'
+AND population > 120000;
 
 ```
 
