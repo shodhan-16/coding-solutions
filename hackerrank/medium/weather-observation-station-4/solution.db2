@@ -1,2 +1,2 @@
-select NAME from CITY
-where COUNTRYCODE = 'JPN';
+select count(city)-count(distinct city)
+from station;
