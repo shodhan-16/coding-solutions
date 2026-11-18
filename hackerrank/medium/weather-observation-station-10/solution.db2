@@ -1,3 +1,4 @@
-select distinct city from station
-where lower(substr(city,1,1))
-not in ('a','e','i','o','u');
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LOWER(SUBSTR(CITY, LENGTH(CITY), 1))
+NOT IN ('a', 'e', 'i', 'o', 'u');
